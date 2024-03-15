@@ -3,5 +3,5 @@ The whole game assets such as characters and background are totally free and can
 
 # Hero-Platformer
 Background: Moon Graveyard by Anolkolisa<br>
-Character-Design :Fantasy Knight - Free Animated Pixelart Character by aamatniekss<br>
+Character-Design: Fantasy Knight - Free Animated Pixelart Character by aamatniekss<br>
 Courtesy to Chris Course to make this project possible
