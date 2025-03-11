@@ -56,4 +56,4 @@ Stage-Two<br>
   Metal Fortress (SHMUP BGM Pack) - by doranarasi<br>
   link to the gameplay: https://www.youtube.com/watch?v=YRiBYI0B76A<br>
   
-Apologize for the unstructed mess of file, if you only want the hack and slash files related, you may ignore Hero Platformer, thank you.
+Apologize for the unstructed mess of a files, if you only want the hack and slash files related, you may ignore Hero Platformer, thank you.
