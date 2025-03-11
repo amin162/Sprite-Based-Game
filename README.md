@@ -7,6 +7,7 @@ Character-Design: Fantasy Knight - Free Animated Pixelart Character by aamatniek
 Courtesy to Chris Course to make this project possible
 
 # Hack and Slash
+**Apologize for the unstructed mess of a files, if you only want the hack and slash files related, you may ignore Hero Platformer, thank you.**
 Stage-One
   *Character Sprite
   Animated Pixel Adventurer - Player character by rvros<br>
@@ -56,4 +57,3 @@ Stage-Two<br>
   Metal Fortress (SHMUP BGM Pack) - by doranarasi<br>
   link to the gameplay: https://www.youtube.com/watch?v=YRiBYI0B76A<br>
   
-Apologize for the unstructed mess of a files, if you only want the hack and slash files related, you may ignore Hero Platformer, thank you.
