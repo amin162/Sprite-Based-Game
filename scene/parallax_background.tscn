@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbrd4veqacdjm"]
+
+[ext_resource type="Texture2D" uid="uid://dsq05kyh4l2sr" path="res://assets/Stage Sprite/Forest of Illusion/Layers/back.png" id="1_v4mkb"]
+[ext_resource type="Texture2D" uid="uid://cm1e1m7cmxcdv" path="res://assets/Stage Sprite/Forest of Illusion/Layers/middle.png" id="2_atm0p"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="BackgroundForest_1" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.3, 0)
+motion_mirroring = Vector2(191.04, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundForest_1"]
+position = Vector2(5.96046e-08, 3.8147e-06)
+scale = Vector2(1.19375, 1.19375)
+texture = ExtResource("1_v4mkb")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="BackgroundForest_1"]
+position = Vector2(189, 3.8147e-06)
+scale = Vector2(1.19375, 1.19375)
+texture = ExtResource("1_v4mkb")
+centered = false
+
+[node name="BackgroundForest_2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.3, 0)
+motion_mirroring = Vector2(191.04, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundForest_2"]
+position = Vector2(382.08, 0)
+scale = Vector2(1.19375, 1.19375)
+texture = ExtResource("1_v4mkb")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="BackgroundForest_2"]
+position = Vector2(572, 0)
+scale = Vector2(1.19375, 1.19375)
+texture = ExtResource("1_v4mkb")
+centered = false
+
+[node name="Forest_1" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 0)
+motion_mirroring = Vector2(457.344, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Forest_1"]
+scale = Vector2(1.19118, 1.19118)
+texture = ExtResource("2_atm0p")
+centered = false
+
+[node name="Forest_2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 0)
+motion_mirroring = Vector2(457.344, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Forest_2"]
+position = Vector2(457, 0.999998)
+scale = Vector2(1.19118, 1.19118)
+texture = ExtResource("2_atm0p")
+centered = false

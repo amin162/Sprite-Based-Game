@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://bojwyfglor0v7"]
+
+[ext_resource type="Texture2D" uid="uid://dsq05kyh4l2sr" path="res://assets/Stage Sprite/Forest of Illusion/Layers/back.png" id="1_jpo0d"]
+[ext_resource type="Texture2D" uid="uid://cm1e1m7cmxcdv" path="res://assets/Stage Sprite/Forest of Illusion/Layers/middle.png" id="2_cy3wn"]
+
+[node name="StageOneParallax" type="ParallaxBackground"]
+
+[node name="FarForest" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.3, 0)
+motion_mirroring = Vector2(190, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="FarForest"]
+scale = Vector2(1.191, 1.191)
+texture = ExtResource("1_jpo0d")
+centered = false
+
+[node name="FarForest2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.3, 0)
+motion_mirroring = Vector2(190, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="FarForest2"]
+position = Vector2(380.5, 0)
+scale = Vector2(1.191, 1.191)
+texture = ExtResource("1_jpo0d")
+centered = false
+
+[node name="FarForest3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.3, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="FarForest3"]
+position = Vector2(761, 0)
+scale = Vector2(1.191, 1.191)
+texture = ExtResource("1_jpo0d")
+centered = false
+
+[node name="CloseForest" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 0)
+motion_mirroring = Vector2(914, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CloseForest"]
+scale = Vector2(1.191, 1.191)
+texture = ExtResource("2_cy3wn")
+centered = false
+
+[node name="CloseForest2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 0)
+motion_mirroring = Vector2(914, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CloseForest2"]
+position = Vector2(457, 0)
+scale = Vector2(1.191, 1.191)
+texture = ExtResource("2_cy3wn")
+centered = false

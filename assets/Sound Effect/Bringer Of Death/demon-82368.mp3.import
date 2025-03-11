@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bqos36h8cmeex"
+path="res://.godot/imported/demon-82368.mp3-78b25a342bed8b458c7a0c4a862d0ae2.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound Effect/Bringer Of Death/demon-82368.mp3"
+dest_files=["res://.godot/imported/demon-82368.mp3-78b25a342bed8b458c7a0c4a862d0ae2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

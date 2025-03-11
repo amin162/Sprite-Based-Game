@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bnljsygmrh3dn"
+path="res://.godot/imported/MAGSpel_Anime Ability Release 12.wav-b763a7e836a547ec078ec0e1ef3e6286.sample"
+
+[deps]
+
+source_file="res://assets/Sound Effect/Fireball/MAGSpel_Anime Ability Release 12.wav"
+dest_files=["res://.godot/imported/MAGSpel_Anime Ability Release 12.wav-b763a7e836a547ec078ec0e1ef3e6286.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

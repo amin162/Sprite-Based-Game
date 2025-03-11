@@ -1,0 +1,106 @@
+[gd_scene load_steps=15 format=3 uid="uid://smarabueetln"]
+
+[ext_resource type="Texture2D" uid="uid://ca50mc2ikw2hq" path="res://assets/Projectiles and Skill/Lightning/Lightning_4_512-sheet.png" id="1_asb6w"]
+[ext_resource type="Script" path="res://script/lightning_spark.gd" id="1_o221s"]
+[ext_resource type="AudioStream" uid="uid://ppnukbw8k11u" path="res://assets/Sound Effect/Lightning/fx-high-voltage-electrical-arcing-and-sparking-254277.mp3" id="3_j4n8s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b11b5"]
+atlas = ExtResource("1_asb6w")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cydk8"]
+atlas = ExtResource("1_asb6w")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bdu35"]
+atlas = ExtResource("1_asb6w")
+region = Rect2(1024, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gj1yg"]
+atlas = ExtResource("1_asb6w")
+region = Rect2(0, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74m71"]
+atlas = ExtResource("1_asb6w")
+region = Rect2(512, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqw43"]
+atlas = ExtResource("1_asb6w")
+region = Rect2(1024, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vbfw2"]
+atlas = ExtResource("1_asb6w")
+region = Rect2(0, 1024, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ngw6x"]
+atlas = ExtResource("1_asb6w")
+region = Rect2(512, 1024, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wqx8d"]
+atlas = ExtResource("1_asb6w")
+region = Rect2(1024, 1024, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2tgrv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b11b5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cydk8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bdu35")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gj1yg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74m71")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kqw43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vbfw2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ngw6x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wqx8d")
+}],
+"loop": true,
+"name": &"Lightning_Spark",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bk3vq"]
+radius = 96.0833
+
+[node name="Lightning_Spark" type="Node2D"]
+scale = Vector2(0.25, 0.25)
+script = ExtResource("1_o221s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2tgrv")
+animation = &"Lightning_Spark"
+frame = 5
+frame_progress = 0.339316
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_bk3vq")
+
+[node name="Timer" type="Timer" parent="Area2D"]
+
+[node name="SparkSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_j4n8s")
+volume_db = -30.0
+max_distance = 200.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

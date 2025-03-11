@@ -1,0 +1,145 @@
+[gd_scene load_steps=21 format=3 uid="uid://sv6wppst0dlg"]
+
+[ext_resource type="Texture2D" uid="uid://xjwp3756o1fr" path="res://assets/Projectiles and Skill/Lightning/Lightning_2_512-sheet.png" id="1_uexhg"]
+[ext_resource type="Script" path="res://script/lightning_emit.gd" id="1_v0e5p"]
+[ext_resource type="AudioStream" uid="uid://d05qhm0xt4emt" path="res://assets/Sound Effect/Lightning/electricity-sparks-long-64783.mp3" id="3_4qxxr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0tnd"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(512, 1024, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjint"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(0, 1024, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64pjb"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(1536, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hrqc"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(1024, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4a7c"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(512, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbvqb"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(0, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jjb0i"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(1536, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t2bqu"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(1024, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xu6i2"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_34kb5"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gi3w"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hq1e"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(1024, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xjror"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(1536, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_in44u"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(0, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5plmx"]
+atlas = ExtResource("1_uexhg")
+region = Rect2(512, 512, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7m5th"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0tnd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mjint")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_64pjb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6hrqc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4a7c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bbvqb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jjb0i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t2bqu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xu6i2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_34kb5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gi3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8hq1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xjror")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_in44u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5plmx")
+}],
+"loop": true,
+"name": &"Lightning_Emit",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fdf05"]
+size = Vector2(36, 320.5)
+
+[node name="Lightning_Emit" type="Node2D"]
+script = ExtResource("1_v0e5p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -20)
+scale = Vector2(0.5, 1.07813)
+sprite_frames = SubResource("SpriteFrames_7m5th")
+animation = &"Lightning_Emit"
+frame_progress = 0.682412
+
+[node name="LightningEmitArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="LightningEmitCollision" type="CollisionShape2D" parent="LightningEmitArea"]
+position = Vector2(0, -14.75)
+shape = SubResource("RectangleShape2D_fdf05")
+
+[node name="Spark" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_4qxxr")
+volume_db = -10.0
+
+[connection signal="body_entered" from="LightningEmitArea" to="." method="_on_area_2d_body_entered"]

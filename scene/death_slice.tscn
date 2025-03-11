@@ -1,0 +1,102 @@
+[gd_scene load_steps=14 format=3 uid="uid://b21hu5aiwb01d"]
+
+[ext_resource type="Texture2D" uid="uid://dh478l5k1eveq" path="res://assets/Entities/Bringer of Death/Bringer-of-Death-attack-effect-only.png" id="1_2llrk"]
+[ext_resource type="Script" uid="uid://dqxifthf8lt3a" path="res://script/death_slice.gd" id="1_patrp"]
+[ext_resource type="AudioStream" uid="uid://cfj6s56nc7ofn" path="res://assets/Sound Effect/Bringer Of Death/fireball-whoosh-2-179126.mp3" id="3_2ciyn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyaaj"]
+atlas = ExtResource("1_2llrk")
+region = Rect2(140, 186, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcmeb"]
+atlas = ExtResource("1_2llrk")
+region = Rect2(280, 186, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vnawk"]
+atlas = ExtResource("1_2llrk")
+region = Rect2(420, 186, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1ako"]
+atlas = ExtResource("1_2llrk")
+region = Rect2(560, 186, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5p652"]
+atlas = ExtResource("1_2llrk")
+region = Rect2(700, 186, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knvc2"]
+atlas = ExtResource("1_2llrk")
+region = Rect2(840, 186, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3nso2"]
+atlas = ExtResource("1_2llrk")
+region = Rect2(980, 186, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dvt4x"]
+atlas = ExtResource("1_2llrk")
+region = Rect2(0, 279, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pubod"]
+atlas = ExtResource("1_2llrk")
+region = Rect2(140, 279, 140, 93)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0yaiy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyaaj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bcmeb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vnawk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1ako")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5p652")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_knvc2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3nso2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dvt4x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pubod")
+}],
+"loop": false,
+"name": &"death_slice",
+"speed": 10.0
+}]
+
+[node name="DeathSlice" type="Node2D"]
+position = Vector2(-39, 0)
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_patrp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(33, -17)
+sprite_frames = SubResource("SpriteFrames_0yaiy")
+animation = &"death_slice"
+frame = 8
+frame_progress = 1.0
+flip_h = true
+
+[node name="DamageArea" type="Area2D" parent="."]
+position = Vector2(36, -20)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DamageArea"]
+polygon = PackedVector2Array(-45, -15, -59, -3, -66, 22, -63, 30, -33, 43, -28, 40, -12, 26, -15, 0, -23, -10)
+
+[node name="DeathSliceSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_2ciyn")
+
+[connection signal="body_entered" from="DamageArea" to="." method="_on_damage_area_body_entered"]

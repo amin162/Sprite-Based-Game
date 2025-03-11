@@ -1,0 +1,155 @@
+[gd_scene load_steps=22 format=3 uid="uid://c8fydpnxfvr00"]
+
+[ext_resource type="Script" uid="uid://bxr5aogun0y6v" path="res://script/hand_of_death.gd" id="1_50qy8"]
+[ext_resource type="Texture2D" uid="uid://bt8vjba1wa1q2" path="res://assets/Entities/Bringer of Death/Bringer-of-Death-SpritSheet.png" id="2_um5m4"]
+[ext_resource type="AudioStream" uid="uid://byeyapkib2k0u" path="res://assets/Sound Effect/Lightning/distorted-impact-explosion-185554.mp3" id="3_wqr0n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfpgu"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(0, 558, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6idlb"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(140, 558, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tgcau"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(280, 558, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_db64b"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(420, 558, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8iito"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(560, 558, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nj55x"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(700, 558, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycok0"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(840, 558, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4q2lr"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(980, 558, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4v4wq"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(0, 651, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6bj0p"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(140, 651, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipyty"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(280, 651, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ute27"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(420, 651, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7n41f"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(560, 651, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mj0oh"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(700, 651, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htjtm"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(840, 651, 140, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43lvr"]
+atlas = ExtResource("2_um5m4")
+region = Rect2(980, 651, 140, 93)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m4g5h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cfpgu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6idlb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tgcau")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_db64b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8iito")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nj55x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ycok0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4q2lr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4v4wq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6bj0p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ipyty")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ute27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7n41f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mj0oh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_htjtm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43lvr")
+}],
+"loop": false,
+"name": &"hand_of_death",
+"speed": 16.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vucgt"]
+size = Vector2(7, 56.8333)
+
+[node name="HandOfDeath" type="Node2D"]
+scale = Vector2(4, 6)
+script = ExtResource("1_50qy8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-3.8147e-06, 0)
+scale = Vector2(0.792857, 1)
+sprite_frames = SubResource("SpriteFrames_m4g5h")
+animation = &"hand_of_death"
+frame = 15
+frame_progress = 1.0
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.25, 17.25)
+shape = SubResource("RectangleShape2D_vucgt")
+
+[node name="HandOfDeathSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_wqr0n")
+volume_db = -5.0
+pitch_scale = 2.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

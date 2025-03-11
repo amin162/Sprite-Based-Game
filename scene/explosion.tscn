@@ -1,0 +1,114 @@
+[gd_scene load_steps=16 format=3 uid="uid://dltgh6flodfi8"]
+
+[ext_resource type="Texture2D" uid="uid://ifva03vlp5h4" path="res://assets/Projectiles and Skill/explosionPack256.png" id="1_b3y1l"]
+[ext_resource type="Script" path="res://script/explosion.gd" id="1_bteo5"]
+[ext_resource type="AudioStream" uid="uid://dwwnajy8g8yhn" path="res://assets/Sound Effect/Fireball/EXPLDsgn_Anime Explosion 1.wav" id="3_c4od4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vnnrw"]
+radius = 32.8938
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_katgs"]
+atlas = ExtResource("1_b3y1l")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k03om"]
+atlas = ExtResource("1_b3y1l")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ofgh0"]
+atlas = ExtResource("1_b3y1l")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rgof8"]
+atlas = ExtResource("1_b3y1l")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s1mdv"]
+atlas = ExtResource("1_b3y1l")
+region = Rect2(256, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40u2m"]
+atlas = ExtResource("1_b3y1l")
+region = Rect2(320, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vq65l"]
+atlas = ExtResource("1_b3y1l")
+region = Rect2(384, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7myk7"]
+atlas = ExtResource("1_b3y1l")
+region = Rect2(448, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_clk8y"]
+atlas = ExtResource("1_b3y1l")
+region = Rect2(256, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsmn5"]
+atlas = ExtResource("1_b3y1l")
+region = Rect2(320, 128, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lgleu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_katgs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k03om")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ofgh0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rgof8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1mdv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40u2m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vq65l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7myk7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_clk8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jsmn5")
+}],
+"loop": true,
+"name": &"Explosion",
+"speed": 15.0
+}]
+
+[node name="Explosion" type="Node2D"]
+rotation = 1.5708
+script = ExtResource("1_bteo5")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="Timer" type="Timer" parent="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_vnnrw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-6, -5)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_lgleu")
+animation = &"Explosion"
+frame = 2
+frame_progress = 0.154962
+
+[node name="Explosion" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_c4od4")
+volume_db = -20.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

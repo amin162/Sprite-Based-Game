@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cr02wgy68dvw8"
+path="res://.godot/imported/metal_punch_06.wav-ac7f4a9b951230caa8c03ab7c3216c94.sample"
+
+[deps]
+
+source_file="res://assets/Sound Effect/Enemy Knight/metal_punch_06.wav"
+dest_files=["res://.godot/imported/metal_punch_06.wav-ac7f4a9b951230caa8c03ab7c3216c94.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

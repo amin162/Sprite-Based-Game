@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b74gnks1iu3lm"
+path="res://.godot/imported/stg_st008.ogg-2426f8eb0edbfe01a6b6af5eda3d8ab7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sound Theme/Stage Theme/stg_st008.ogg"
+dest_files=["res://.godot/imported/stg_st008.ogg-2426f8eb0edbfe01a6b6af5eda3d8ab7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

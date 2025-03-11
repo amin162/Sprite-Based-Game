@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2wskpg8ywixr"
+path="res://.godot/imported/eagle-squawking-type-1-235991.mp3-ebec79d4f2abfbee8743e5f2467e4256.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound Effect/Bird/eagle-squawking-type-1-235991.mp3"
+dest_files=["res://.godot/imported/eagle-squawking-type-1-235991.mp3-ebec79d4f2abfbee8743e5f2467e4256.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

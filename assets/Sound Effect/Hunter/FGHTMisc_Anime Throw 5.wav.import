@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bduar22qn6dst"
+path="res://.godot/imported/FGHTMisc_Anime Throw 5.wav-0bcb4691522476c7303537b74e80828d.sample"
+
+[deps]
+
+source_file="res://assets/Sound Effect/Hunter/FGHTMisc_Anime Throw 5.wav"
+dest_files=["res://.godot/imported/FGHTMisc_Anime Throw 5.wav-0bcb4691522476c7303537b74e80828d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

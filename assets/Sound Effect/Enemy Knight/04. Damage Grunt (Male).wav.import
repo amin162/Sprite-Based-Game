@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://4h8kvdsrswrr"
+path="res://.godot/imported/04. Damage Grunt (Male).wav-b01fa8ed4dc9cfe4676ca5d82b7760bb.sample"
+
+[deps]
+
+source_file="res://assets/Sound Effect/Enemy Knight/04. Damage Grunt (Male).wav"
+dest_files=["res://.godot/imported/04. Damage Grunt (Male).wav-b01fa8ed4dc9cfe4676ca5d82b7760bb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

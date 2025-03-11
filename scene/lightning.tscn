@@ -1,0 +1,117 @@
+[gd_scene load_steps=16 format=3 uid="uid://dqx25yhaa0yag"]
+
+[ext_resource type="Script" uid="uid://dmyq1d7yp3xfn" path="res://script/lightning.gd" id="1_8irk1"]
+[ext_resource type="Texture2D" uid="uid://hr3ph75djano" path="res://assets/Projectiles and Skill/Lightning/Lightning_1_512-sheet.png" id="2_1ixgr"]
+[ext_resource type="AudioStream" uid="uid://byeyapkib2k0u" path="res://assets/Sound Effect/Lightning/distorted-impact-explosion-185554.mp3" id="3_wov0c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1sj3"]
+atlas = ExtResource("2_1ixgr")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12yu8"]
+atlas = ExtResource("2_1ixgr")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p27no"]
+atlas = ExtResource("2_1ixgr")
+region = Rect2(1024, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2nit"]
+atlas = ExtResource("2_1ixgr")
+region = Rect2(0, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmbso"]
+atlas = ExtResource("2_1ixgr")
+region = Rect2(512, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgoyt"]
+atlas = ExtResource("2_1ixgr")
+region = Rect2(1024, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sftwq"]
+atlas = ExtResource("2_1ixgr")
+region = Rect2(0, 1024, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8sgr"]
+atlas = ExtResource("2_1ixgr")
+region = Rect2(512, 1024, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_syn4m"]
+atlas = ExtResource("2_1ixgr")
+region = Rect2(1024, 1024, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qd7pi"]
+atlas = ExtResource("2_1ixgr")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mftxq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1sj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12yu8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p27no")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i2nit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmbso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgoyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sftwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8sgr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_syn4m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qd7pi")
+}],
+"loop": false,
+"name": &"Lightning_Strike",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8sv37"]
+size = Vector2(40, 433)
+
+[node name="Lightning" type="Node2D"]
+scale = Vector2(0.5, 1)
+script = ExtResource("1_8irk1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 1
+texture_filter = 1
+position = Vector2(0, -100)
+scale = Vector2(1, 2)
+sprite_frames = SubResource("SpriteFrames_mftxq")
+animation = &"Lightning_Strike"
+frame = 9
+frame_progress = 1.0
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(0, -174)
+scale = Vector2(1, 2)
+shape = SubResource("RectangleShape2D_8sv37")
+
+[node name="LightningSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_wov0c")
+volume_db = -5.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

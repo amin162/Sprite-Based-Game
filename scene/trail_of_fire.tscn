@@ -1,0 +1,531 @@
+[gd_scene load_steps=125 format=3 uid="uid://vnt8ghnsbdk5"]
+
+[ext_resource type="Texture2D" uid="uid://x71hye0lymf5" path="res://assets/Projectiles and Skill/FXpack13/Effect3/1.png" id="1_1et0a"]
+[ext_resource type="Script" path="res://script/trail_of_fire.gd" id="1_7lyr0"]
+[ext_resource type="Texture2D" uid="uid://dgf0mdixh6c7c" path="res://assets/Projectiles and Skill/FXpack13/Effect3/2.png" id="2_a10bj"]
+[ext_resource type="Texture2D" uid="uid://3tcca44x7e5t" path="res://assets/Projectiles and Skill/FXpack13/Effect3/3.png" id="3_mrvsp"]
+[ext_resource type="Texture2D" uid="uid://82oqyrwry56o" path="res://assets/Projectiles and Skill/FXpack13/Effect3/4.png" id="4_1jhth"]
+[ext_resource type="Texture2D" uid="uid://coos8dvk6wpj5" path="res://assets/Projectiles and Skill/FXpack13/Effect3/5.png" id="5_24fcf"]
+[ext_resource type="Texture2D" uid="uid://dbo72wyhvb3lu" path="res://assets/Projectiles and Skill/FXpack13/Effect3/6.png" id="6_wrbxg"]
+[ext_resource type="Texture2D" uid="uid://ck20b1xrjdvv0" path="res://assets/Projectiles and Skill/FXpack13/Effect3/7.png" id="7_xku82"]
+[ext_resource type="Texture2D" uid="uid://b1l0urqgpruiu" path="res://assets/Projectiles and Skill/FXpack13/Effect3/8.png" id="8_777y1"]
+[ext_resource type="Texture2D" uid="uid://b1qasqh8eau77" path="res://assets/Projectiles and Skill/FXpack13/Effect3/9.png" id="9_wbbiy"]
+[ext_resource type="Texture2D" uid="uid://bohvfyy64xcrw" path="res://assets/Projectiles and Skill/FXpack13/Effect3/10.png" id="10_hbrtw"]
+[ext_resource type="Texture2D" uid="uid://cwhge3jps4b7k" path="res://assets/Projectiles and Skill/FXpack13/Effect3/11.png" id="11_8g4x7"]
+[ext_resource type="Texture2D" uid="uid://wcsliko6ioc3" path="res://assets/Projectiles and Skill/FXpack13/Effect3/12.png" id="12_yj11t"]
+[ext_resource type="Texture2D" uid="uid://crb24dah76j60" path="res://assets/Projectiles and Skill/FXpack13/Effect3/13.png" id="13_x2yxo"]
+[ext_resource type="Texture2D" uid="uid://boykbt4xmtrej" path="res://assets/Projectiles and Skill/FXpack13/Effect3/14.png" id="14_l63mo"]
+[ext_resource type="Texture2D" uid="uid://d3c2v2jurd03h" path="res://assets/Projectiles and Skill/FXpack13/Effect3/15.png" id="15_4nu1s"]
+[ext_resource type="Texture2D" uid="uid://b60x3mrhuamlf" path="res://assets/Projectiles and Skill/FXpack13/Effect3/16.png" id="16_3rvny"]
+[ext_resource type="Texture2D" uid="uid://cvrdbxkqq17nf" path="res://assets/Projectiles and Skill/FXpack13/Effect3/17.png" id="17_7e5rk"]
+[ext_resource type="Texture2D" uid="uid://cfsu22eb1ysis" path="res://assets/Projectiles and Skill/FXpack13/Effect3/18.png" id="18_epsky"]
+[ext_resource type="Texture2D" uid="uid://dlhw0gr12eseg" path="res://assets/Projectiles and Skill/FXpack13/Effect3/19.png" id="19_h6nty"]
+[ext_resource type="Texture2D" uid="uid://b7k0h6l4n3qsi" path="res://assets/Projectiles and Skill/FXpack13/Effect3/20.png" id="20_l2bvv"]
+[ext_resource type="Texture2D" uid="uid://wut678s7mirr" path="res://assets/Projectiles and Skill/FXpack13/Effect3/21.png" id="21_be7j0"]
+[ext_resource type="Texture2D" uid="uid://b6w0xft4w33ck" path="res://assets/Projectiles and Skill/FXpack13/Effect3/22.png" id="22_b24g0"]
+[ext_resource type="Texture2D" uid="uid://b5jnmkdac0fq4" path="res://assets/Projectiles and Skill/FXpack13/Effect3/23.png" id="23_s25xc"]
+[ext_resource type="Texture2D" uid="uid://bg6skpyl77xcw" path="res://assets/Projectiles and Skill/FXpack13/Effect3/24.png" id="24_8mrfm"]
+[ext_resource type="Texture2D" uid="uid://dk8q5wbnre3qx" path="res://assets/Projectiles and Skill/FXpack13/Effect3/25.png" id="25_1kr70"]
+[ext_resource type="Texture2D" uid="uid://cb60c5a5ahero" path="res://assets/Projectiles and Skill/FXpack13/Effect3/26.png" id="26_63g7k"]
+[ext_resource type="Texture2D" uid="uid://cos2mje4jlvyx" path="res://assets/Projectiles and Skill/FXpack13/Effect3/27.png" id="27_yystl"]
+[ext_resource type="Texture2D" uid="uid://0ngsglqgj73k" path="res://assets/Projectiles and Skill/FXpack13/Effect3/28.png" id="28_d1gf3"]
+[ext_resource type="Texture2D" uid="uid://b46bjunlitdpn" path="res://assets/Projectiles and Skill/FXpack13/Effect3/29.png" id="29_nq0gc"]
+[ext_resource type="Texture2D" uid="uid://b0q0ewbp8gb15" path="res://assets/Projectiles and Skill/FXpack13/Effect3/30.png" id="30_wk6qy"]
+[ext_resource type="Texture2D" uid="uid://c6js26y3ekd8n" path="res://assets/Projectiles and Skill/FXpack13/Effect3/31.png" id="31_5bml0"]
+[ext_resource type="Texture2D" uid="uid://bc0wv6u8vdukd" path="res://assets/Projectiles and Skill/FXpack13/Effect3/32.png" id="32_bjv2g"]
+[ext_resource type="Texture2D" uid="uid://dcf82p8527sin" path="res://assets/Projectiles and Skill/FXpack13/Effect3/33.png" id="33_x7bws"]
+[ext_resource type="Texture2D" uid="uid://djjaob7maygdk" path="res://assets/Projectiles and Skill/FXpack13/Effect3/34.png" id="34_o7t2l"]
+[ext_resource type="Texture2D" uid="uid://dyrtaqkdvqn7j" path="res://assets/Projectiles and Skill/FXpack13/Effect3/35.png" id="35_3jhah"]
+[ext_resource type="Texture2D" uid="uid://cgxlr7um3eoot" path="res://assets/Projectiles and Skill/FXpack13/Effect3/36.png" id="36_to4pg"]
+[ext_resource type="Texture2D" uid="uid://c1ijbfynj6m7" path="res://assets/Projectiles and Skill/FXpack13/Effect3/37.png" id="37_i1vca"]
+[ext_resource type="Texture2D" uid="uid://c5y7bjloajlcs" path="res://assets/Projectiles and Skill/FXpack13/Effect3/38.png" id="38_y0qr7"]
+[ext_resource type="Texture2D" uid="uid://0lmrgao7gat1" path="res://assets/Projectiles and Skill/FXpack13/Effect3/39.png" id="39_l2ax7"]
+[ext_resource type="Texture2D" uid="uid://b8il3qjh5iclt" path="res://assets/Projectiles and Skill/FXpack13/Effect3/40.png" id="40_m45n4"]
+[ext_resource type="Texture2D" uid="uid://biy6vatxnw28o" path="res://assets/Projectiles and Skill/FXpack13/Effect3/41.png" id="41_ajdju"]
+[ext_resource type="Texture2D" uid="uid://ctiwk51iuhnay" path="res://assets/Projectiles and Skill/FXpack13/Effect3/42.png" id="42_nugtu"]
+[ext_resource type="Texture2D" uid="uid://dqyp755k0ntjv" path="res://assets/Projectiles and Skill/FXpack13/Effect3/43.png" id="43_nhx25"]
+[ext_resource type="Texture2D" uid="uid://c60a8ee1hexrq" path="res://assets/Projectiles and Skill/FXpack13/Effect3/44.png" id="44_dcvyt"]
+[ext_resource type="Texture2D" uid="uid://dab6ykxno8fj3" path="res://assets/Projectiles and Skill/FXpack13/Effect3/45.png" id="45_gfnok"]
+[ext_resource type="Texture2D" uid="uid://cypml1vcyhghm" path="res://assets/Projectiles and Skill/FXpack13/Effect3/46.png" id="46_dxigq"]
+[ext_resource type="Texture2D" uid="uid://bxvjf1qdfvhtv" path="res://assets/Projectiles and Skill/FXpack13/Effect3/47.png" id="47_i0s44"]
+[ext_resource type="Texture2D" uid="uid://md3cttswgbal" path="res://assets/Projectiles and Skill/FXpack13/Effect3/48.png" id="48_xnhhn"]
+[ext_resource type="Texture2D" uid="uid://6shue4152y8" path="res://assets/Projectiles and Skill/FXpack13/Effect3/49.png" id="49_n8pao"]
+[ext_resource type="Texture2D" uid="uid://dixf3ius5gdlg" path="res://assets/Projectiles and Skill/FXpack13/Effect3/50.png" id="50_h6djq"]
+[ext_resource type="Texture2D" uid="uid://bm3qpsmbxqvf2" path="res://assets/Projectiles and Skill/FXpack13/Effect3/51.png" id="51_5yvh1"]
+[ext_resource type="Texture2D" uid="uid://bj7p8s2mm7t5w" path="res://assets/Projectiles and Skill/FXpack13/Effect3/52.png" id="52_f6d5y"]
+[ext_resource type="Texture2D" uid="uid://dmivlilyv1wkw" path="res://assets/Projectiles and Skill/FXpack13/Effect3/53.png" id="53_uokg1"]
+[ext_resource type="Texture2D" uid="uid://c1qwtu0pkvs4k" path="res://assets/Projectiles and Skill/FXpack13/Effect3/54.png" id="54_08cqf"]
+[ext_resource type="Texture2D" uid="uid://b76cmstyhjlnq" path="res://assets/Projectiles and Skill/FXpack13/Effect3/55.png" id="55_rctwa"]
+[ext_resource type="Texture2D" uid="uid://7cej7b3h502d" path="res://assets/Projectiles and Skill/FXpack13/Effect3/56.png" id="56_x8tbd"]
+[ext_resource type="Texture2D" uid="uid://dtrxqskyk15bw" path="res://assets/Projectiles and Skill/FXpack13/Effect3/57.png" id="57_0y15w"]
+[ext_resource type="Texture2D" uid="uid://r3c7iqgj1xox" path="res://assets/Projectiles and Skill/FXpack13/Effect3/58.png" id="58_bogpg"]
+[ext_resource type="Texture2D" uid="uid://wc3ykwf10itv" path="res://assets/Projectiles and Skill/FXpack13/Effect3/59.png" id="59_hqgyi"]
+[ext_resource type="Texture2D" uid="uid://4258co0obwmt" path="res://assets/Projectiles and Skill/FXpack13/Effect3/60.png" id="60_epqtk"]
+[ext_resource type="AudioStream" uid="uid://b0832vo6af86k" path="res://assets/Sound Effect/Fire/fire-sound-efftect-21991.mp3" id="62_4tldh"]
+[ext_resource type="Texture2D" uid="uid://vcp66ftmd4ny" path="res://assets/Projectiles and Skill/FXpack13/Effect2/1.png" id="62_yotku"]
+[ext_resource type="Texture2D" uid="uid://bo7l0r77vmsui" path="res://assets/Projectiles and Skill/FXpack13/Effect2/2.png" id="63_tlpml"]
+[ext_resource type="Texture2D" uid="uid://bg173oc165nvd" path="res://assets/Projectiles and Skill/FXpack13/Effect2/3.png" id="64_axuiy"]
+[ext_resource type="Texture2D" uid="uid://b3hl3e2h8t07d" path="res://assets/Projectiles and Skill/FXpack13/Effect2/4.png" id="65_ug2ba"]
+[ext_resource type="Texture2D" uid="uid://o8aikrm87dmo" path="res://assets/Projectiles and Skill/FXpack13/Effect2/5.png" id="66_3f2rm"]
+[ext_resource type="Texture2D" uid="uid://xpxuoo8m1ovk" path="res://assets/Projectiles and Skill/FXpack13/Effect2/6.png" id="67_g3e0s"]
+[ext_resource type="Texture2D" uid="uid://cnabjibvf8bxt" path="res://assets/Projectiles and Skill/FXpack13/Effect2/7.png" id="68_efk4m"]
+[ext_resource type="Texture2D" uid="uid://cja6q2x35sq3m" path="res://assets/Projectiles and Skill/FXpack13/Effect2/8.png" id="69_db50y"]
+[ext_resource type="Texture2D" uid="uid://c74pjua123yba" path="res://assets/Projectiles and Skill/FXpack13/Effect2/9.png" id="70_uqb1s"]
+[ext_resource type="Texture2D" uid="uid://8b87sgth6204" path="res://assets/Projectiles and Skill/FXpack13/Effect2/10.png" id="71_p1k3q"]
+[ext_resource type="Texture2D" uid="uid://cyr57tafcrjp2" path="res://assets/Projectiles and Skill/FXpack13/Effect2/11.png" id="72_ixi37"]
+[ext_resource type="Texture2D" uid="uid://busm2r8dxk8ns" path="res://assets/Projectiles and Skill/FXpack13/Effect2/12.png" id="73_dan11"]
+[ext_resource type="Texture2D" uid="uid://c3jy72gtn5fi1" path="res://assets/Projectiles and Skill/FXpack13/Effect2/13.png" id="74_bothw"]
+[ext_resource type="Texture2D" uid="uid://g1ve7vwxqgdn" path="res://assets/Projectiles and Skill/FXpack13/Effect2/14.png" id="75_3ko8b"]
+[ext_resource type="Texture2D" uid="uid://bpdc0lubkfhr5" path="res://assets/Projectiles and Skill/FXpack13/Effect2/15.png" id="76_7x8nu"]
+[ext_resource type="Texture2D" uid="uid://e7533hgt82dn" path="res://assets/Projectiles and Skill/FXpack13/Effect2/16.png" id="77_qq3r5"]
+[ext_resource type="Texture2D" uid="uid://bxmwo67da1vcv" path="res://assets/Projectiles and Skill/FXpack13/Effect2/17.png" id="78_le7yl"]
+[ext_resource type="Texture2D" uid="uid://rtck531sr6iu" path="res://assets/Projectiles and Skill/FXpack13/Effect2/18.png" id="79_uvidf"]
+[ext_resource type="Texture2D" uid="uid://nhylb01m17wr" path="res://assets/Projectiles and Skill/FXpack13/Effect2/19.png" id="80_aa445"]
+[ext_resource type="Texture2D" uid="uid://dpuua4tpqhj7" path="res://assets/Projectiles and Skill/FXpack13/Effect2/20.png" id="81_52b44"]
+[ext_resource type="Texture2D" uid="uid://bo6ln73237oh" path="res://assets/Projectiles and Skill/FXpack13/Effect2/21.png" id="82_c7vjx"]
+[ext_resource type="Texture2D" uid="uid://dk7ckdd54btxi" path="res://assets/Projectiles and Skill/FXpack13/Effect2/22.png" id="83_h7i3d"]
+[ext_resource type="Texture2D" uid="uid://bp5skwum34xng" path="res://assets/Projectiles and Skill/FXpack13/Effect2/23.png" id="84_adgr6"]
+[ext_resource type="Texture2D" uid="uid://bqgehrmqtlcff" path="res://assets/Projectiles and Skill/FXpack13/Effect2/24.png" id="85_62bxr"]
+[ext_resource type="Texture2D" uid="uid://cevtprv7md7ls" path="res://assets/Projectiles and Skill/FXpack13/Effect2/25.png" id="86_wqm5p"]
+[ext_resource type="Texture2D" uid="uid://dp3g5gdvnrfl5" path="res://assets/Projectiles and Skill/FXpack13/Effect2/26.png" id="87_0hppv"]
+[ext_resource type="Texture2D" uid="uid://oiqk6xmwoi1e" path="res://assets/Projectiles and Skill/FXpack13/Effect2/27.png" id="88_sl7ys"]
+[ext_resource type="Texture2D" uid="uid://c7uhim75okfne" path="res://assets/Projectiles and Skill/FXpack13/Effect2/28.png" id="89_tiw47"]
+[ext_resource type="Texture2D" uid="uid://bttw8lhuhg1kl" path="res://assets/Projectiles and Skill/FXpack13/Effect2/29.png" id="90_0x6gv"]
+[ext_resource type="Texture2D" uid="uid://dnc1kn1le7mwe" path="res://assets/Projectiles and Skill/FXpack13/Effect2/30.png" id="91_2ulif"]
+[ext_resource type="Texture2D" uid="uid://b07r5vngt0leu" path="res://assets/Projectiles and Skill/FXpack13/Effect2/31.png" id="92_7hrlg"]
+[ext_resource type="Texture2D" uid="uid://bbss3vgxs5582" path="res://assets/Projectiles and Skill/FXpack13/Effect2/32.png" id="93_18pnb"]
+[ext_resource type="Texture2D" uid="uid://diw61k2d2u74x" path="res://assets/Projectiles and Skill/FXpack13/Effect2/33.png" id="94_cxytt"]
+[ext_resource type="Texture2D" uid="uid://b3ojdegagd08j" path="res://assets/Projectiles and Skill/FXpack13/Effect2/34.png" id="95_bktb2"]
+[ext_resource type="Texture2D" uid="uid://bhrkvj0rixwit" path="res://assets/Projectiles and Skill/FXpack13/Effect2/35.png" id="96_1g3tk"]
+[ext_resource type="Texture2D" uid="uid://bk51bx1k2h7oe" path="res://assets/Projectiles and Skill/FXpack13/Effect2/36.png" id="97_wwte8"]
+[ext_resource type="Texture2D" uid="uid://dehyxyfiin3ty" path="res://assets/Projectiles and Skill/FXpack13/Effect2/37.png" id="98_5jhmu"]
+[ext_resource type="Texture2D" uid="uid://c76vxgd8gd2rh" path="res://assets/Projectiles and Skill/FXpack13/Effect2/38.png" id="99_mkciy"]
+[ext_resource type="Texture2D" uid="uid://cn0trv4djm6qf" path="res://assets/Projectiles and Skill/FXpack13/Effect2/39.png" id="100_34uiw"]
+[ext_resource type="Texture2D" uid="uid://bn8601877exit" path="res://assets/Projectiles and Skill/FXpack13/Effect2/40.png" id="101_pqa0f"]
+[ext_resource type="Texture2D" uid="uid://bx6kc6weckq2i" path="res://assets/Projectiles and Skill/FXpack13/Effect2/41.png" id="102_4usfy"]
+[ext_resource type="Texture2D" uid="uid://b1nsw2u4n16lg" path="res://assets/Projectiles and Skill/FXpack13/Effect2/42.png" id="103_qj64u"]
+[ext_resource type="Texture2D" uid="uid://b2lmntj86f8e8" path="res://assets/Projectiles and Skill/FXpack13/Effect2/43.png" id="104_7av8h"]
+[ext_resource type="Texture2D" uid="uid://bhp63njljf6np" path="res://assets/Projectiles and Skill/FXpack13/Effect2/44.png" id="105_lr8b0"]
+[ext_resource type="Texture2D" uid="uid://04jofnc3r4ck" path="res://assets/Projectiles and Skill/FXpack13/Effect2/45.png" id="106_byn33"]
+[ext_resource type="Texture2D" uid="uid://dr8fialhmnbhs" path="res://assets/Projectiles and Skill/FXpack13/Effect2/46.png" id="107_3nfg3"]
+[ext_resource type="Texture2D" uid="uid://tqstiv6p04dv" path="res://assets/Projectiles and Skill/FXpack13/Effect2/47.png" id="108_saodf"]
+[ext_resource type="Texture2D" uid="uid://buneil8yhc5so" path="res://assets/Projectiles and Skill/FXpack13/Effect2/48.png" id="109_j1y6q"]
+[ext_resource type="Texture2D" uid="uid://bpjd6elk4dqt1" path="res://assets/Projectiles and Skill/FXpack13/Effect2/49.png" id="110_hhawp"]
+[ext_resource type="Texture2D" uid="uid://c71316qewlbsc" path="res://assets/Projectiles and Skill/FXpack13/Effect2/50.png" id="111_c7qug"]
+[ext_resource type="Texture2D" uid="uid://ts70kwovts62" path="res://assets/Projectiles and Skill/FXpack13/Effect2/51.png" id="112_ejv5i"]
+[ext_resource type="Texture2D" uid="uid://cm0obypauawno" path="res://assets/Projectiles and Skill/FXpack13/Effect2/52.png" id="113_xhhig"]
+[ext_resource type="Texture2D" uid="uid://bsqtiatjr83g6" path="res://assets/Projectiles and Skill/FXpack13/Effect2/53.png" id="114_s8a4q"]
+[ext_resource type="Texture2D" uid="uid://gbmgbb5y5oky" path="res://assets/Projectiles and Skill/FXpack13/Effect2/54.png" id="115_o41ch"]
+[ext_resource type="Texture2D" uid="uid://dwjywq2ne27s7" path="res://assets/Projectiles and Skill/FXpack13/Effect2/55.png" id="116_c4xlx"]
+[ext_resource type="Texture2D" uid="uid://bqj2gqm25n1ho" path="res://assets/Projectiles and Skill/FXpack13/Effect2/56.png" id="117_1nsuo"]
+[ext_resource type="Texture2D" uid="uid://bdoj64jmawh5m" path="res://assets/Projectiles and Skill/FXpack13/Effect2/57.png" id="118_cp0ch"]
+[ext_resource type="Texture2D" uid="uid://chra7nm8t7blq" path="res://assets/Projectiles and Skill/FXpack13/Effect2/58.png" id="119_hhhl7"]
+[ext_resource type="Texture2D" uid="uid://t1i8ir3jdyts" path="res://assets/Projectiles and Skill/FXpack13/Effect2/59.png" id="120_b1l28"]
+[ext_resource type="Texture2D" uid="uid://dxaslprjgfysu" path="res://assets/Projectiles and Skill/FXpack13/Effect2/60.png" id="121_011ga"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g2q2q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1et0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_a10bj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mrvsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1jhth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_24fcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wrbxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xku82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_777y1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wbbiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hbrtw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8g4x7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_yj11t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_x2yxo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_l63mo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4nu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_3rvny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7e5rk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_epsky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_h6nty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_l2bvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_be7j0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_b24g0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_s25xc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_8mrfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_1kr70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_63g7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_yystl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_d1gf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_nq0gc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_wk6qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_5bml0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_bjv2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_x7bws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_o7t2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_3jhah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_to4pg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_i1vca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_y0qr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_l2ax7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_m45n4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_ajdju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_nugtu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_nhx25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_dcvyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_gfnok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_dxigq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_i0s44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_xnhhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_n8pao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_h6djq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_5yvh1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_f6d5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_uokg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_08cqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_rctwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_x8tbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_0y15w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_bogpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_hqgyi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_epqtk")
+}],
+"loop": true,
+"name": &"Fire_Trail",
+"speed": 60.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("62_yotku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_tlpml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_axuiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_ug2ba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_3f2rm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_g3e0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_efk4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_db50y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_uqb1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_p1k3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_ixi37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_dan11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_bothw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_3ko8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_7x8nu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_qq3r5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_le7yl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_uvidf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_aa445")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_52b44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_c7vjx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_h7i3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_adgr6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_62bxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_wqm5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_0hppv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_sl7ys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_tiw47")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_0x6gv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_2ulif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_7hrlg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_18pnb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_cxytt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_bktb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_1g3tk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_wwte8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_5jhmu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_mkciy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_34uiw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_pqa0f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_4usfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_qj64u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_7av8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_lr8b0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_byn33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_3nfg3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_saodf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_j1y6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_hhawp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_c7qug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_ejv5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_xhhig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_s8a4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_o41ch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_c4xlx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_1nsuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_cp0ch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_hhhl7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_b1l28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_011ga")
+}],
+"loop": true,
+"name": &"Fire_Trail2",
+"speed": 60.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s40ds"]
+radius = 10.0499
+
+[node name="Trail_of_Fire" type="Node2D"]
+z_index = 1
+scale = Vector2(2, 2)
+script = ExtResource("1_7lyr0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -3)
+rotation = 1.5708
+scale = Vector2(0.736627, 0.736627)
+sprite_frames = SubResource("SpriteFrames_g2q2q")
+animation = &"Fire_Trail2"
+frame_progress = 0.983671
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, 1)
+shape = SubResource("CircleShape2D_s40ds")
+
+[node name="Timer" type="Timer" parent="Area2D"]
+
+[node name="Fire" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("62_4tldh")
+volume_db = -20.0
+max_distance = 500.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

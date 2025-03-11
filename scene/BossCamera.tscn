@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1urfep51jsmk"]
+
+[ext_resource type="Script" path="res://script/boss_camera.gd" id="1_neiqs"]
+
+[node name="Camera2D" type="Camera2D"]
+zoom = Vector2(2, 2)
+script = ExtResource("1_neiqs")

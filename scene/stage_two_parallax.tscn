@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://busi3bbhll8ji"]
+
+[ext_resource type="Texture2D" uid="uid://ckaifm55ol1f0" path="res://assets/Stage Sprite/Night Level/Background_0.png" id="1_dfx42"]
+[ext_resource type="Texture2D" uid="uid://v5hyrkcthive" path="res://assets/Stage Sprite/Night Level/Background_1.png" id="2_6f1b2"]
+[ext_resource type="Texture2D" uid="uid://dayuftjar02u0" path="res://assets/Stage Sprite/Night Level/Grass_background_1.png" id="3_5wij8"]
+[ext_resource type="Texture2D" uid="uid://cpgja5kob4dss" path="res://assets/Stage Sprite/Night Level/Grass_background_2.png" id="4_et4xi"]
+
+[node name="StageTwoParallax" type="ParallaxBackground"]
+
+[node name="Moon" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Moon"]
+scale = Vector2(1.191, 1.191)
+texture = ExtResource("1_dfx42")
+centered = false
+
+[node name="Cathedral" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(914, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Cathedral"]
+scale = Vector2(1.191, 1.191)
+texture = ExtResource("2_6f1b2")
+centered = false
+
+[node name="BushGrave" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(838, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BushGrave"]
+position = Vector2(419, 0)
+scale = Vector2(1.191, 1.191)
+texture = ExtResource("3_5wij8")
+centered = false
+
+[node name="TreeBushGrave" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(838, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="TreeBushGrave"]
+scale = Vector2(1.191, 1.191)
+texture = ExtResource("4_et4xi")
+centered = false

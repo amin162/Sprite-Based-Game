@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://byubvoe5mvdnv"
+path="res://.godot/imported/SWSH_Anime Fly 2.wav-7435683eb54eee75e677cd73b35028e4.sample"
+
+[deps]
+
+source_file="res://assets/Sound Effect/Fire/SWSH_Anime Fly 2.wav"
+dest_files=["res://.godot/imported/SWSH_Anime Fly 2.wav-7435683eb54eee75e677cd73b35028e4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

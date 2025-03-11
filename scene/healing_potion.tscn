@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=3 uid="uid://cnmytjl1aptt3"]
+
+[ext_resource type="Script" path="res://script/healing_potion.gd" id="1_h1as8"]
+[ext_resource type="Texture2D" uid="uid://crc1ga83qrtb7" path="res://assets/Stage Sprite/Tiles.png" id="1_tneq8"]
+[ext_resource type="AudioStream" uid="uid://vihfk1r05q8l" path="res://assets/Sound Effect/Miscellaneous/02_Heal_02.wav" id="3_5frji"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_su1ac"]
+atlas = ExtResource("1_tneq8")
+region = Rect2(288, 352, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t6bkn"]
+atlas = ExtResource("1_tneq8")
+region = Rect2(272, 352, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_soec2"]
+atlas = ExtResource("1_tneq8")
+region = Rect2(256, 352, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukwxm"]
+atlas = ExtResource("1_tneq8")
+region = Rect2(240, 352, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vacm8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_su1ac")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t6bkn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_soec2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukwxm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bkgkp"]
+radius = 6.0
+height = 14.0
+
+[node name="HealingPotion" type="CharacterBody2D"]
+collision_layer = 0
+script = ExtResource("1_h1as8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vacm8")
+frame_progress = 0.102569
+
+[node name="PickupArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="PickupCollision" type="CollisionShape2D" parent="PickupArea"]
+shape = SubResource("CapsuleShape2D_bkgkp")
+
+[node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_5frji")
+
+[node name="PhysicsBody" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_bkgkp")
+
+[connection signal="body_entered" from="PickupArea" to="." method="_on_pickup_area_body_entered"]

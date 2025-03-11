@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ciirp3h28t4o5"]
+
+[ext_resource type="Script" path="res://script/boss_camera.gd" id="1_4kgq7"]
+[ext_resource type="Script" path="res://script/boss_area_trigger.gd" id="2_sdvw0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xeoql"]
+
+[node name="BossStage" type="Node2D"]
+
+[node name="BossCamera" type="Camera2D" parent="."]
+script = ExtResource("1_4kgq7")
+
+[node name="BossAreaTrigger" type="Area2D" parent="."]
+script = ExtResource("2_sdvw0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BossAreaTrigger"]
+shape = SubResource("RectangleShape2D_xeoql")

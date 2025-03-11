@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ppnukbw8k11u"
+path="res://.godot/imported/fx-high-voltage-electrical-arcing-and-sparking-254277.mp3-dc00208d0b094b48c6c41d1a544c8874.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound Effect/Lightning/fx-high-voltage-electrical-arcing-and-sparking-254277.mp3"
+dest_files=["res://.godot/imported/fx-high-voltage-electrical-arcing-and-sparking-254277.mp3-dc00208d0b094b48c6c41d1a544c8874.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
