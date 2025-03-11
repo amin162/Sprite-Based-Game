@@ -7,7 +7,7 @@ Character-Design: Fantasy Knight - Free Animated Pixelart Character by aamatniek
 Courtesy to Chris Course to make this project possible
 
 # Hack and Slash
-**Apologize for the unstructed mess of a files, if you only want the hack and slash files related, you may ignore Hero Platformer, thank you.**
+**Apologize for the unstructed mess of a files, if you only want the hack and slash files related, you may ignore Hero Platformer, thank you.**<br><br>
 Stage-One
   *Character Sprite
   Animated Pixel Adventurer - Player character by rvros<br>
